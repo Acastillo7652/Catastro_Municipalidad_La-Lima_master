@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.bitacora {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente los elementos dentro de la sección */
+}
+
+
+.bitacora-titulo {
+    color: var(--fuente-ceniza-oscuro);
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2em;
+    /*margin: 0 0 1em;*/
+    clear:left;
+}
+
+label {
+    flex: 1; /* Expande el espacio disponible para el label */
+    text-align: left; /* Alinea el texto del label a la derecha */
+    margin-right: 10px; /* Espacio entre el label y el campo de entrada */
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 40%; /* El campo de entrada ocupará el 50% del ancho de su contenedor (la sección) */
+}
+    
+
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla */
+#tabla-bitacora {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tabla-bitacora th, #tabla-bitacora td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-bitacora th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para hacer la tabla responsive con CSS Grid */
+@media (max-width: 1024px) {
+    #tabla-bitacora {
+        display: block;
+        overflow-x: auto;
+    }
+
+    input[type="text"] {
+        width: 75%; /* El campo de entrada ocupará el 50% del ancho de su contenedor (la sección) */
+    }
+
+    #tabla-bitacora thead {
+        display: none;
+    }
+
+    #tabla-bitacora tbody, #tabla-bitacora tr, #tabla-bitacora td {
+        display: block;
+        width: 100%;
+    }
+
+    #tabla-bitacora td {
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+        margin-bottom: 5px;
+    }
+}
+
