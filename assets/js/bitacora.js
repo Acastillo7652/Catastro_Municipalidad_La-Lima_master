@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const eventos = [
         {
-            Numero: 1,
+            Codigo: "OCT01",
             Fecha: "07/10/2023",
             "Numero Catastral": "C12345",
             Ubicacion: "Calle Principal",
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Observaciones: "Sin observaciones"
         },
         {
-            Numero: 2,
+            Codigo: "OCT02",
             Fecha: "07/10/2023",
             "Numero Catastral": "C12388",
             Ubicacion: "Calle Principal",
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Observaciones: "Sin observaciones"
         },
         {
-            Numero: 3,
+            Codigo: "OCT03",
             Fecha: "2023-10-07",
             "Numero Catastral": "C12389",
             Ubicacion: "Calle Principal",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Observaciones: "Sin observaciones"
         },
         {
-            Numero: 4,
+            Codigo: "OCT04",
             Fecha: "2023-10-07",
             "Numero Catastral": "C12389",
             Ubicacion: "Calle Principal",
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Observaciones: "Sin observaciones"
         },
         {
-            Numero: 5,
+            Codigo: "OCT05",
             Fecha: "08/10/2023",
             "Numero Catastral": "C12345",
             Ubicacion: "Calle Principal",
@@ -95,3 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     filtro.addEventListener("input", actualizarTabla); // Usa "input" para buscar en tiempo real mientras se escribe
     actualizarTabla(); // Llena la tabla al cargar la página
 });
+
+
+
+
